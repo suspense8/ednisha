@@ -4,12 +4,35 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ===== Ednisha Brand Design Tokens ===== */
 @theme inline {
+  /* Fonts */
+  --font-sans: var(--font-nunito);
+  --font-heading: var(--font-fredoka);
+  --font-display: var(--font-fredoka);
+
+  /* Brand Colors */
+  --color-navy: #1B2A4A;
+  --color-gold: #D4A843;
+  --color-brand-blue: #2B5CE6;
+  --color-sunshine: #FFC72C;
+  --color-sky: #A8D8EA;
+  --color-terracotta: #A0603C;
+
+  /* Neutrals */
+  --color-cloud: #FAFBFC;
+  --color-warm-gray: #F5F0EB;
+  --color-slate-text: #6B7280;
+  --color-charcoal: #1F2937;
+
+  /* Semantic */
+  --color-success: #34A853;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  /* shadcn mappings */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,82 +72,314 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: #FAFBFC;
+  --foreground: #1F2937;
+  --card: #FFFFFF;
+  --card-foreground: #1F2937;
+  --popover: #FFFFFF;
+  --popover-foreground: #1F2937;
+  --primary: #1B2A4A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F5F0EB;
+  --secondary-foreground: #1B2A4A;
+  --muted: #F5F0EB;
+  --muted-foreground: #6B7280;
+  --accent: #D4A843;
+  --accent-foreground: #1B2A4A;
+  --destructive: #EF4444;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #2B5CE6;
+  --chart-1: #D4A843;
+  --chart-2: #2B5CE6;
+  --chart-3: #A8D8EA;
+  --chart-4: #FFC72C;
+  --chart-5: #A0603C;
+  --radius: 0.75rem;
+  --sidebar: #1B2A4A;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #D4A843;
+  --sidebar-primary-foreground: #1B2A4A;
+  --sidebar-accent: #2B5CE6;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #D4A843;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
+  }
+}
+
+/* ===== Ednisha Custom Utilities ===== */
+
+/* Wavy section divider */
+.wavy-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wavy-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse animation for WhatsApp button */
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.animate-whatsapp-pulse {
+  animation: whatsapp-pulse 2s infinite;
+}
+
+/* Confetti dot pattern background */
+.confetti-bg {
+  background-image:
+    radial-gradient(circle, #D4A843 1.5px, transparent 1.5px),
+    radial-gradient(circle, #2B5CE6 1px, transparent 1px),
+    radial-gradient(circle, #FFC72C 1px, transparent 1px),
+    radial-gradient(circle, #A8D8EA 1.5px, transparent 1.5px);
+  background-size: 80px 80px, 120px 120px, 100px 100px, 60px 60px;
+  background-position: 0 0, 40px 40px, 70px 20px, 20px 60px;
+}
+
+/* ===== Scroll-Reveal Animation Keyframes ===== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 4rem;
+  }
+}
+
+@keyframes heroTextReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes shimmerGlow {
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes gentleBounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* ===== Animation Utility Classes ===== */
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.animate-fadeInLeft {
+  animation: fadeInLeft 0.6s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 0.6s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.animate-fadeInScale {
+  animation: fadeInScale 0.5s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.5s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.animate-heroTextReveal {
+  animation: heroTextReveal 0.8s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.animate-drawLine {
+  animation: drawLine 0.8s cubic-bezier(0, 0, 0.2, 1) forwards;
+  overflow: hidden;
+}
+
+.animate-gentleBounce {
+  animation: gentleBounce 2s ease-in-out infinite;
+}
+
+/* Navbar scroll transition */
+.navbar-scrolled {
+  background-color: rgba(27, 42, 74, 0.98);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-top {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Lightbox transitions */
+.lightbox-overlay {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+.lightbox-image {
+  animation: fadeInScale 0.3s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+/* ===== Accessibility: Respect Reduced Motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+  }
+
+  .animate-float,
+  .animate-whatsapp-pulse,
+  .animate-gentleBounce {
+    animation: none !important;
   }
 }
