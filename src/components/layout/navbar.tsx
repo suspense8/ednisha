@@ -11,6 +11,7 @@ import {
     SheetTrigger,
     SheetTitle,
 } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const navLinks = [
     { href: "/", label: "Home" },
@@ -54,7 +55,7 @@ export function Navbar() {
                         />
                     </div>
                     <div className="hidden sm:block">
-                        <p className="font-display text-lg font-semibold leading-tight text-white">
+                        <p className="font-display text-lg font-semibold leading-tight text-white inline-block mt-1">
                             Ednisha
                         </p>
                         <p className="text-[10px] font-medium tracking-wide text-gold">
@@ -76,23 +77,27 @@ export function Navbar() {
                     ))}
                 </nav>
 
-                {/* Desktop CTA */}
-                <Link href="/contact" className="hidden md:block">
-                    <Button className="rounded-lg bg-gold px-6 font-semibold text-navy hover:bg-gold/90 hover:scale-[1.02] transition-all duration-200">
-                        Enroll Now
-                    </Button>
-                </Link>
+                {/* Right actions */}
+                <div className="flex items-center gap-3">
+                    <ThemeToggle />
+                    
+                    {/* Desktop CTA */}
+                    <Link href="/contact" className="hidden md:block">
+                        <Button className="rounded-lg bg-gold px-6 font-semibold text-navy hover:bg-gold/90 hover:scale-[1.02] transition-all duration-200">
+                            Enroll Now
+                        </Button>
+                    </Link>
 
-                {/* Mobile hamburger */}
-                <Sheet open={open} onOpenChange={setOpen}>
-                    <SheetTrigger asChild className="md:hidden">
-                        <button
-                            className="rounded-md p-2 text-white hover:bg-white/10 transition-colors"
-                            aria-label="Open menu"
-                        >
-                            <Menu className="h-6 w-6" />
-                        </button>
-                    </SheetTrigger>
+                    {/* Mobile hamburger */}
+                    <Sheet open={open} onOpenChange={setOpen}>
+                        <SheetTrigger asChild className="md:hidden">
+                            <button
+                                className="rounded-md p-2 text-white hover:bg-white/10 transition-colors"
+                                aria-label="Open menu"
+                            >
+                                <Menu className="h-6 w-6" />
+                            </button>
+                        </SheetTrigger>
                     <SheetContent
                         side="right"
                         className="w-[300px] border-none bg-navy p-0"
@@ -146,6 +151,7 @@ export function Navbar() {
                         </div>
                     </SheetContent>
                 </Sheet>
+                </div>
             </div>
         </header>
     );

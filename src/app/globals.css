@@ -106,6 +106,45 @@
   --sidebar-ring: #D4A843;
 }
 
+.dark {
+  --background: #0f1422;
+  --foreground: #f0f2f5;
+  --card: #151d32;
+  --card-foreground: #f0f2f5;
+  --popover: #151d32;
+  --popover-foreground: #f0f2f5;
+  --primary: #f0f2f5;
+  --primary-foreground: #0f1422;
+  --secondary: #1a243a;
+  --secondary-foreground: #f0f2f5;
+  --muted: #1a243a;
+  --muted-foreground: #8a9bbd;
+  --accent: #D4A843;
+  --accent-foreground: #0f1422;
+  --destructive: #EF4444;
+  --border: #263351;
+  --input: #263351;
+  --ring: #2B5CE6;
+  --chart-1: #D4A843;
+  --chart-2: #2B5CE6;
+  --chart-3: #A8D8EA;
+  --chart-4: #FFC72C;
+  --chart-5: #A0603C;
+  --sidebar: #151d32;
+  --sidebar-foreground: #f0f2f5;
+  --sidebar-primary: #D4A843;
+  --sidebar-primary-foreground: #0f1422;
+  --sidebar-accent: #2B5CE6;
+  --sidebar-accent-foreground: #f0f2f5;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #D4A843;
+  --color-navy: #f0f2f5;
+  --color-cloud: #0f1422;
+  --color-warm-gray: #151d32;
+  --color-slate-text: #8a9bbd;
+  --color-charcoal: #f0f2f5;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
