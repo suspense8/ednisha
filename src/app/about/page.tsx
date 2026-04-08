@@ -55,7 +55,7 @@ export default function AboutPage() {
                     alt="Ednisha Day Care community"
                     fill
                     sizes="100vw"
-                    className="object-cover opacity-30"
+                    className="object-cover opacity-50"
                 />
                 <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
                     <p
@@ -146,7 +146,7 @@ export default function AboutPage() {
                         <AnimateOnScroll animation="fadeInLeft" duration={700} className="order-2 lg:order-1 flex justify-center">
                             <div className="relative h-[400px] w-[320px] overflow-hidden rounded-2xl border-4 border-gold/30 shadow-xl">
                                 <Image
-                                    src="/images/proprietor-portrait.jpeg"
+                                    src="/images/proprietor-portrait.png"
                                     alt="Mrs. Eunice Sharka — Proprietor"
                                     fill
                                     sizes="320px"
@@ -213,7 +213,7 @@ export default function AboutPage() {
                                 key={value.title}
                                 className="rounded-xl bg-white dark:bg-[#1a243a] p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
                             >
-                                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-navy dark:bg-[#0a0f1a]/5 transition-transform duration-300 hover:scale-110">
+                                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-navy/10 transition-transform duration-300 hover:scale-110">
                                     <value.icon className="h-6 w-6 text-navy dark:text-[#f0f2f5]" />
                                 </div>
                                 <h3 className="font-display text-lg font-semibold text-navy dark:text-[#f0f2f5]">

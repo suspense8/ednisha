@@ -88,7 +88,7 @@ export default function ProgramsPage() {
                     alt="Children learning at Ednisha"
                     fill
                     sizes="100vw"
-                    className="object-cover opacity-30"
+                    className="object-cover opacity-50"
                 />
                 <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
                     <p
@@ -148,7 +148,7 @@ export default function ProgramsPage() {
                                 className={i % 2 === 1 ? "lg:order-1" : ""}
                             >
                                 <div className="mb-3 flex items-center gap-3">
-                                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy dark:bg-[#0a0f1a]/10">
+                                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy/10">
                                         <program.icon className="h-6 w-6 text-navy dark:text-[#f0f2f5]" />
                                     </div>
                                     <h2 className="font-display text-2xl font-bold text-navy dark:text-[#f0f2f5] sm:text-3xl">

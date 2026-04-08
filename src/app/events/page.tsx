@@ -49,7 +49,7 @@ export default function EventsPage() {
                     alt="Event at Ednisha Day Care"
                     fill
                     sizes="100vw"
-                    className="object-cover opacity-25"
+                    className="object-cover opacity-40"
                 />
                 <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
                     <p
@@ -215,8 +215,7 @@ export default function EventsPage() {
                                         sizes="(max-width: 640px) 50vw, 25vw"
                                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                                     />
-                                    <div className="absolute inset-0 bg-navy dark:bg-[#0a0f1a]/0 transition-colors duration-300 group-hover:bg-navy/15" />
-                                </div>
+<div className="absolute inset-0 bg-transparent transition-colors duration-300 group-hover:bg-navy/20 dark:group-hover:bg-black/40" />                                </div>
                             ))}
                         </StaggerContainer>
                     </div>

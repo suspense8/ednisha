@@ -31,8 +31,8 @@ export default function Home() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/60 to-navy/40" />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+{/* Change this line: */}
+<div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-navy/40 to-transparent dark:from-[#050810]/90 dark:via-[#050810]/80 dark:to-[#050810]/60" />        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <p
               className="mb-3 inline-block rounded-full bg-gold/20 px-4 py-1.5 font-display text-sm font-semibold text-gold animate-heroTextReveal"
@@ -269,7 +269,7 @@ export default function Home() {
                 className="border-none bg-white dark:bg-[#1a243a] text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
               >
                 <CardContent className="p-6">
-                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-navy dark:bg-[#0a0f1a]/5 transition-all duration-300 group-hover:bg-navy/10">
+                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-navy/10 transition-all duration-300 group-hover:bg-navy/20">
                     <feature.icon className="h-7 w-7 text-navy dark:text-[#f0f2f5]" />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-navy dark:text-[#f0f2f5]">
@@ -318,7 +318,7 @@ export default function Home() {
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-navy dark:bg-[#0a0f1a]/0 transition-colors duration-300 group-hover:bg-navy/15" />
+                <div className="absolute inset-0 bg-transparent transition-colors duration-300 group-hover:bg-navy/15 dark:group-hover:bg-white/5" />
               </div>
             ))}
           </StaggerContainer>
