@@ -11,19 +11,19 @@
   --font-heading: var(--font-fredoka);
   --font-display: var(--font-fredoka);
 
-  /* Brand Colors */
-  --color-navy: #1B2A4A;
-  --color-gold: #D4A843;
-  --color-brand-blue: #2B5CE6;
-  --color-sunshine: #FFC72C;
-  --color-sky: #A8D8EA;
-  --color-terracotta: #A0603C;
+  /* Brand Colors Setup via indirect variables for dark mode support */
+  --color-navy: var(--theme-navy);
+  --color-gold: var(--theme-gold);
+  --color-brand-blue: var(--theme-brand-blue);
+  --color-sunshine: var(--theme-sunshine);
+  --color-sky: var(--theme-sky);
+  --color-terracotta: var(--theme-terracotta);
 
   /* Neutrals */
-  --color-cloud: #FAFBFC;
-  --color-warm-gray: #F5F0EB;
-  --color-slate-text: #6B7280;
-  --color-charcoal: #1F2937;
+  --color-cloud: var(--theme-cloud);
+  --color-warm-gray: var(--theme-warm-gray);
+  --color-slate-text: var(--theme-slate-text);
+  --color-charcoal: var(--theme-charcoal);
 
   /* Semantic */
   --color-success: #34A853;
@@ -104,6 +104,18 @@
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: rgba(255, 255, 255, 0.1);
   --sidebar-ring: #D4A843;
+
+  /* Theme variables used in @theme */
+  --theme-navy: #1B2A4A;
+  --theme-gold: #D4A843;
+  --theme-brand-blue: #2B5CE6;
+  --theme-sunshine: #FFC72C;
+  --theme-sky: #A8D8EA;
+  --theme-terracotta: #A0603C;
+  --theme-cloud: #FAFBFC;
+  --theme-warm-gray: #F5F0EB;
+  --theme-slate-text: #6B7280;
+  --theme-charcoal: #1F2937;
 }
 
 .dark {
@@ -138,11 +150,20 @@
   --sidebar-accent-foreground: #f0f2f5;
   --sidebar-border: rgba(255, 255, 255, 0.1);
   --sidebar-ring: #D4A843;
-  --color-navy: #f0f2f5;
-  --color-cloud: #0f1422;
-  --color-warm-gray: #151d32;
-  --color-slate-text: #8a9bbd;
-  --color-charcoal: #f0f2f5;
+
+  /* Theme variables for dark mode */
+  --theme-navy: #f0f2f5;
+  --theme-cloud: #0A0F1A;
+  --theme-warm-gray: #151D32;
+  --theme-slate-text: #A0ABC0;
+  --theme-charcoal: #E2E8F0;
+  
+  /* Keep others the same or tweak slightly if needed */
+  --theme-gold: #D4A843;
+  --theme-brand-blue: #3B82F6;
+  --theme-sunshine: #FBBF24;
+  --theme-sky: #7DD3FC;
+  --theme-terracotta: #B45309;
 }
 
 @layer base {

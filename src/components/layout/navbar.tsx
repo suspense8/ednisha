@@ -38,8 +38,8 @@ export function Navbar() {
     return (
         <header
             className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled
-                    ? "bg-navy/98 shadow-lg backdrop-blur-md"
-                    : "bg-navy shadow-none"
+                    ? "bg-navy dark:bg-[#0a0f1a]/98 shadow-lg backdrop-blur-md"
+                    : "bg-navy dark:bg-[#0a0f1a] shadow-none"
                 }`}
         >
             <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -83,7 +83,7 @@ export function Navbar() {
                     
                     {/* Desktop CTA */}
                     <Link href="/contact" className="hidden md:block">
-                        <Button className="rounded-lg bg-gold px-6 font-semibold text-navy hover:bg-gold/90 hover:scale-[1.02] transition-all duration-200">
+                        <Button className="rounded-lg bg-gold px-6 font-semibold text-navy dark:text-[#f0f2f5] hover:bg-gold/90 hover:scale-[1.02] transition-all duration-200">
                             Enroll Now
                         </Button>
                     </Link>
@@ -100,7 +100,7 @@ export function Navbar() {
                         </SheetTrigger>
                     <SheetContent
                         side="right"
-                        className="w-[300px] border-none bg-navy p-0"
+                        className="w-[300px] border-none bg-navy dark:bg-[#0a0f1a] p-0"
                     >
                         <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                         <div className="flex h-full flex-col">
@@ -143,7 +143,7 @@ export function Navbar() {
                             {/* Mobile CTA */}
                             <div className="mt-auto border-t border-white/10 px-6 py-6">
                                 <Link href="/contact" onClick={() => setOpen(false)}>
-                                    <Button className="w-full rounded-lg bg-gold py-6 text-base font-semibold text-navy hover:bg-gold/90">
+                                    <Button className="w-full rounded-lg bg-gold py-6 text-base font-semibold text-navy dark:text-[#f0f2f5] hover:bg-gold/90">
                                         Enroll Your Child
                                     </Button>
                                 </Link>

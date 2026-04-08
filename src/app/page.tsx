@@ -74,7 +74,7 @@ export default function Home() {
               <Link href="/contact">
                 <Button
                   size="lg"
-                  className="rounded-lg bg-gold px-8 py-6 text-base font-semibold text-navy hover:bg-gold/90 hover:scale-[1.02] transition-all"
+                  className="rounded-lg bg-gold px-8 py-6 text-base font-semibold text-navy dark:text-[#f0f2f5] hover:bg-gold/90 hover:scale-[1.02] transition-all"
                 >
                   Enroll Your Child
                 </Button>
@@ -94,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* ===== TRUST BAR ===== */}
-      <section className="bg-navy py-6">
+      <section className="bg-navy dark:bg-[#0a0f1a] py-6">
         <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-6 px-4 sm:flex-row sm:gap-16">
           <AnimatedCounter target="1+" label="Year of Service" />
           <AnimatedCounter target="20+" label="Happy Children" />
@@ -105,7 +105,7 @@ export default function Home() {
       <WavyDivider color="#FAFBFC" />
 
       {/* ===== WELCOME ===== */}
-      <section className="bg-cloud py-16 sm:py-20">
+      <section className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <AnimateOnScroll animation="fadeInLeft" duration={700}>
@@ -114,21 +114,21 @@ export default function Home() {
                 subtitle="A warm message from our proprietor, Mrs. Eunice Sharka."
                 centered={false}
               />
-              <p className="text-base leading-relaxed text-slate-text">
+              <p className="text-base leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                 Mrs. Eunice Sharka, the proprietor of Ednisha Day Care, is driven
                 by a deep passion for children that turned her dream into reality.
                 Since founding the school on January 6, 2025, she has built a
                 nurturing environment where every child is treated with equal love,
                 care, and attention.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-slate-text">
+              <p className="mt-4 text-base leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                 With an HTC qualification and an unwavering dedication to early
                 childhood development, Mrs. Sharka has made Ednisha more than just
                 a daycare — it&#39;s a haven where children from all walks of life
                 feel loved, valued, and safe.
               </p>
               <Link href="/about" className="mt-6 inline-block">
-                <Button variant="outline" className="rounded-lg border-navy text-navy hover:bg-navy hover:text-white">
+                <Button variant="outline" className="rounded-lg border-navy dark:border-[#f0f2f5] text-navy dark:text-[#f0f2f5] hover:bg-navy hover:text-white">
                   Read Our Story <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
@@ -154,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* ===== PROGRAMS PREVIEW ===== */}
-      <section className="bg-warm-gray py-16 sm:py-20">
+      <section className="bg-warm-gray dark:bg-[#151d32] py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll animation="fadeInUp">
             <SectionHeading
@@ -173,7 +173,7 @@ export default function Home() {
                 title: "Daycare",
                 age: "6 months – 2 years",
                 desc: "Safe, loving care with sensory play, gentle music, and first social experiences for your little ones.",
-                color: "bg-sunshine/20 text-navy",
+                color: "bg-sunshine/20 text-navy dark:text-[#f0f2f5]",
                 iconColor: "text-sunshine",
               },
               {
@@ -181,7 +181,7 @@ export default function Home() {
                 title: "Nursery",
                 age: "2 – 4 years",
                 desc: "Play-based learning with alphabet, numbers, colors, shapes, and creative arts to spark curiosity.",
-                color: "bg-brand-blue/10 text-navy",
+                color: "bg-brand-blue/10 text-navy dark:text-[#f0f2f5]",
                 iconColor: "text-brand-blue",
               },
               {
@@ -189,13 +189,13 @@ export default function Home() {
                 title: "Preparatory",
                 age: "4 – 6 years",
                 desc: "School readiness with reading, writing, math, and social skills to prepare for primary school success.",
-                color: "bg-gold/15 text-navy",
+                color: "bg-gold/15 text-navy dark:text-[#f0f2f5]",
                 iconColor: "text-gold",
               },
             ].map((program) => (
               <Card
                 key={program.title}
-                className="group relative overflow-hidden border-none bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+                className="group relative overflow-hidden border-none bg-white dark:bg-[#1a243a] shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
               >
                 <CardContent className="p-6">
                   <div
@@ -203,13 +203,13 @@ export default function Home() {
                   >
                     <program.icon className={`h-7 w-7 ${program.iconColor}`} />
                   </div>
-                  <h3 className="font-display text-xl font-semibold text-navy">
+                  <h3 className="font-display text-xl font-semibold text-navy dark:text-[#f0f2f5]">
                     {program.title}
                   </h3>
                   <p className="mt-1 text-sm font-semibold text-gold">
                     {program.age}
                   </p>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-text">
+                  <p className="mt-3 text-sm leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                     {program.desc}
                   </p>
                 </CardContent>
@@ -219,7 +219,7 @@ export default function Home() {
           <AnimateOnScroll animation="fadeInUp" delay={400}>
             <div className="mt-8 text-center">
               <Link href="/programs">
-                <Button variant="outline" className="rounded-lg border-navy text-navy hover:bg-navy hover:text-white">
+                <Button variant="outline" className="rounded-lg border-navy dark:border-[#f0f2f5] text-navy dark:text-[#f0f2f5] hover:bg-navy hover:text-white">
                   View All Programs <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
@@ -229,7 +229,7 @@ export default function Home() {
       </section>
 
       {/* ===== WHY CHOOSE US ===== */}
-      <section className="bg-cloud py-16 sm:py-20">
+      <section className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll animation="fadeInUp">
             <SectionHeading
@@ -266,16 +266,16 @@ export default function Home() {
             ].map((feature) => (
               <Card
                 key={feature.title}
-                className="border-none bg-white text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+                className="border-none bg-white dark:bg-[#1a243a] text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
               >
                 <CardContent className="p-6">
-                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-navy/5 transition-all duration-300 group-hover:bg-navy/10">
-                    <feature.icon className="h-7 w-7 text-navy" />
+                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-navy dark:bg-[#0a0f1a]/5 transition-all duration-300 group-hover:bg-navy/10">
+                    <feature.icon className="h-7 w-7 text-navy dark:text-[#f0f2f5]" />
                   </div>
-                  <h3 className="font-display text-lg font-semibold text-navy">
+                  <h3 className="font-display text-lg font-semibold text-navy dark:text-[#f0f2f5]">
                     {feature.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-text">
+                  <p className="mt-2 text-sm leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                     {feature.desc}
                   </p>
                 </CardContent>
@@ -286,7 +286,7 @@ export default function Home() {
       </section>
 
       {/* ===== GALLERY PREVIEW ===== */}
-      <section className="bg-warm-gray py-16 sm:py-20">
+      <section className="bg-warm-gray dark:bg-[#151d32] py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll animation="fadeInUp">
             <SectionHeading
@@ -318,14 +318,14 @@ export default function Home() {
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-navy/0 transition-colors duration-300 group-hover:bg-navy/15" />
+                <div className="absolute inset-0 bg-navy dark:bg-[#0a0f1a]/0 transition-colors duration-300 group-hover:bg-navy/15" />
               </div>
             ))}
           </StaggerContainer>
           <AnimateOnScroll animation="fadeInUp" delay={300}>
             <div className="mt-8 text-center">
               <Link href="/gallery">
-                <Button variant="outline" className="rounded-lg border-navy text-navy hover:bg-navy hover:text-white">
+                <Button variant="outline" className="rounded-lg border-navy dark:border-[#f0f2f5] text-navy dark:text-[#f0f2f5] hover:bg-navy hover:text-white">
                   View Full Gallery <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
@@ -335,7 +335,7 @@ export default function Home() {
       </section>
 
       {/* ===== ANNOUNCEMENTS ===== */}
-      <section className="bg-cloud py-16 sm:py-20">
+      <section className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll animation="fadeInUp">
             <SectionHeading
@@ -365,10 +365,10 @@ export default function Home() {
                     Every Other Friday
                   </span>
                 </div>
-                <h3 className="font-display text-lg font-semibold text-navy">
+                <h3 className="font-display text-lg font-semibold text-navy dark:text-[#f0f2f5]">
                   Color Day Fridays!
                 </h3>
-                <p className="mt-2 text-sm text-slate-text">
+                <p className="mt-2 text-sm text-slate-text dark:text-[#8a9bbd]">
                   Children can wear any bright, fun clothes and shoes of their
                   choice — let&#39;s make Fridays more joyful and expressive!
                 </p>
@@ -392,10 +392,10 @@ export default function Home() {
                     April 2026 — Second Term
                   </span>
                 </div>
-                <h3 className="font-display text-lg font-semibold text-navy">
+                <h3 className="font-display text-lg font-semibold text-navy dark:text-[#f0f2f5]">
                   Field Trip to John F. Kennedy
                 </h3>
-                <p className="mt-2 text-sm text-slate-text">
+                <p className="mt-2 text-sm text-slate-text dark:text-[#8a9bbd]">
                   An exciting educational field trip for our students to explore,
                   learn, and experience new environments beyond the classroom!
                 </p>
@@ -405,7 +405,7 @@ export default function Home() {
           <AnimateOnScroll animation="fadeInUp" delay={300}>
             <div className="mt-8 text-center">
               <Link href="/events">
-                <Button variant="outline" className="rounded-lg border-navy text-navy hover:bg-navy hover:text-white">
+                <Button variant="outline" className="rounded-lg border-navy dark:border-[#f0f2f5] text-navy dark:text-[#f0f2f5] hover:bg-navy hover:text-white">
                   View All Events <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
@@ -416,7 +416,7 @@ export default function Home() {
 
       {/* ===== CONTACT CTA ===== */}
       <AnimateOnScroll animation="fadeIn">
-        <section className="relative overflow-hidden bg-navy py-16 sm:py-20">
+        <section className="relative overflow-hidden bg-navy dark:bg-[#0a0f1a] py-16 sm:py-20">
           <div className="absolute inset-0 confetti-bg opacity-5" />
           <div className="relative z-10 mx-auto max-w-3xl px-4 text-center sm:px-6">
             <AnimateOnScroll animation="fadeInUp">
@@ -436,7 +436,7 @@ export default function Home() {
                 <Link href="/contact">
                   <Button
                     size="lg"
-                    className="rounded-lg bg-gold px-8 py-6 text-base font-semibold text-navy hover:bg-gold/90 hover:scale-[1.02] transition-all"
+                    className="rounded-lg bg-gold px-8 py-6 text-base font-semibold text-navy dark:text-[#f0f2f5] hover:bg-gold/90 hover:scale-[1.02] transition-all"
                   >
                     Contact Us Today
                   </Button>

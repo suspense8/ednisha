@@ -43,7 +43,7 @@ export default function EventsPage() {
     return (
         <>
             {/* Hero */}
-            <section className="relative flex min-h-[300px] items-center overflow-hidden bg-navy">
+            <section className="relative flex min-h-[300px] items-center overflow-hidden bg-navy dark:bg-[#0a0f1a]">
                 <Image
                     src="/images/ceremony-setup.jpeg"
                     alt="Event at Ednisha Day Care"
@@ -74,7 +74,7 @@ export default function EventsPage() {
             </section>
 
             {/* Upcoming Events */}
-            <section className="bg-cloud py-16 sm:py-20">
+            <section className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <AnimateOnScroll animation="fadeInUp">
                         <SectionHeading
@@ -102,30 +102,30 @@ export default function EventsPage() {
                                             className="object-cover transition-transform duration-500 group-hover:scale-105"
                                         />
                                         {event.tag && (
-                                            <span className="absolute left-3 top-3 rounded-full bg-sunshine px-3 py-1 text-xs font-bold text-navy">
+                                            <span className="absolute left-3 top-3 rounded-full bg-sunshine px-3 py-1 text-xs font-bold text-navy dark:text-[#f0f2f5]">
                                                 {event.tag}
                                             </span>
                                         )}
                                     </div>
                                     <CardContent className="flex flex-col justify-center p-6">
-                                        <h3 className="font-display text-xl font-semibold text-navy">
+                                        <h3 className="font-display text-xl font-semibold text-navy dark:text-[#f0f2f5]">
                                             {event.title}
                                         </h3>
                                         <div className="mt-3 space-y-2">
-                                            <p className="flex items-center gap-2 text-sm text-slate-text">
+                                            <p className="flex items-center gap-2 text-sm text-slate-text dark:text-[#8a9bbd]">
                                                 <Calendar className="h-4 w-4 text-gold" />
                                                 {event.date}
                                             </p>
-                                            <p className="flex items-center gap-2 text-sm text-slate-text">
+                                            <p className="flex items-center gap-2 text-sm text-slate-text dark:text-[#8a9bbd]">
                                                 <Clock className="h-4 w-4 text-gold" />
                                                 {event.time}
                                             </p>
-                                            <p className="flex items-center gap-2 text-sm text-slate-text">
+                                            <p className="flex items-center gap-2 text-sm text-slate-text dark:text-[#8a9bbd]">
                                                 <MapPin className="h-4 w-4 text-gold" />
                                                 {event.location}
                                             </p>
                                         </div>
-                                        <p className="mt-3 text-sm leading-relaxed text-slate-text">
+                                        <p className="mt-3 text-sm leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                                             {event.desc}
                                         </p>
                                     </CardContent>
@@ -137,7 +137,7 @@ export default function EventsPage() {
             </section>
 
             {/* Past Events */}
-            <section className="bg-warm-gray py-16 sm:py-20">
+            <section className="bg-warm-gray dark:bg-[#151d32] py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <AnimateOnScroll animation="fadeInUp">
                         <SectionHeading
@@ -165,20 +165,20 @@ export default function EventsPage() {
                                     />
                                 </div>
                                 <CardContent className="p-6">
-                                    <h3 className="font-display text-xl font-semibold text-navy">
+                                    <h3 className="font-display text-xl font-semibold text-navy dark:text-[#f0f2f5]">
                                         {event.title}
                                     </h3>
                                     <div className="mt-2 space-y-1">
-                                        <p className="flex items-center gap-2 text-sm text-slate-text">
+                                        <p className="flex items-center gap-2 text-sm text-slate-text dark:text-[#8a9bbd]">
                                             <Calendar className="h-4 w-4 text-gold" />
                                             {event.date}
                                         </p>
-                                        <p className="flex items-center gap-2 text-sm text-slate-text">
+                                        <p className="flex items-center gap-2 text-sm text-slate-text dark:text-[#8a9bbd]">
                                             <MapPin className="h-4 w-4 text-gold" />
                                             {event.location}
                                         </p>
                                     </div>
-                                    <p className="mt-3 text-sm leading-relaxed text-slate-text">
+                                    <p className="mt-3 text-sm leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                                         {event.desc}
                                     </p>
                                 </CardContent>
@@ -189,7 +189,7 @@ export default function EventsPage() {
                     {/* Event Gallery */}
                     <div className="mt-12">
                         <AnimateOnScroll animation="fadeInUp">
-                            <h3 className="mb-6 text-center font-display text-2xl font-semibold text-navy">
+                            <h3 className="mb-6 text-center font-display text-2xl font-semibold text-navy dark:text-[#f0f2f5]">
                                 Event Highlights
                             </h3>
                         </AnimateOnScroll>
@@ -215,7 +215,7 @@ export default function EventsPage() {
                                         sizes="(max-width: 640px) 50vw, 25vw"
                                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                                     />
-                                    <div className="absolute inset-0 bg-navy/0 transition-colors duration-300 group-hover:bg-navy/15" />
+                                    <div className="absolute inset-0 bg-navy dark:bg-[#0a0f1a]/0 transition-colors duration-300 group-hover:bg-navy/15" />
                                 </div>
                             ))}
                         </StaggerContainer>

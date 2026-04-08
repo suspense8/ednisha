@@ -104,7 +104,7 @@ export default function ContactPage() {
     return (
         <>
             {/* Hero */}
-            <section className="relative flex min-h-[300px] items-center overflow-hidden bg-navy">
+            <section className="relative flex min-h-[300px] items-center overflow-hidden bg-navy dark:bg-[#0a0f1a]">
                 <Image
                     src="/images/event-party-outdoor.jpeg"
                     alt="Ednisha Day Care community"
@@ -134,7 +134,7 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            <section className="bg-cloud py-16 sm:py-20">
+            <section className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid gap-10 lg:grid-cols-5">
                         {/* Form */}
@@ -150,7 +150,7 @@ export default function ContactPage() {
                                     <div>
                                         <label
                                             htmlFor="name"
-                                            className="mb-1.5 block text-sm font-semibold text-navy"
+                                            className="mb-1.5 block text-sm font-semibold text-navy dark:text-[#f0f2f5]"
                                         >
                                             Parent / Guardian Name *
                                         </label>
@@ -163,7 +163,7 @@ export default function ContactPage() {
                                             value={formState.name}
                                             onChange={handleChange}
                                             placeholder="Your full name"
-                                            className={`h-12 w-full rounded-lg border bg-white px-4 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.name ? "border-error" : "border-gray-200"}`}
+                                            className={`h-12 w-full rounded-lg border bg-white dark:bg-[#1a243a] px-4 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.name ? "border-error" : "border-gray-200"}`}
                                         />
                                         {errors.name && (
                                             <p className="mt-1 text-xs text-error">{errors.name}</p>
@@ -172,7 +172,7 @@ export default function ContactPage() {
                                     <div>
                                         <label
                                             htmlFor="phone"
-                                            className="mb-1.5 block text-sm font-semibold text-navy"
+                                            className="mb-1.5 block text-sm font-semibold text-navy dark:text-[#f0f2f5]"
                                         >
                                             Phone Number *
                                         </label>
@@ -185,7 +185,7 @@ export default function ContactPage() {
                                             value={formState.phone}
                                             onChange={handleChange}
                                             placeholder="e.g. 031-18-0012"
-                                            className={`h-12 w-full rounded-lg border bg-white px-4 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.phone ? "border-error" : "border-gray-200"}`}
+                                            className={`h-12 w-full rounded-lg border bg-white dark:bg-[#1a243a] px-4 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.phone ? "border-error" : "border-gray-200"}`}
                                         />
                                         {errors.phone && (
                                             <p className="mt-1 text-xs text-error">{errors.phone}</p>
@@ -196,7 +196,7 @@ export default function ContactPage() {
                                 <div>
                                     <label
                                         htmlFor="email"
-                                        className="mb-1.5 block text-sm font-semibold text-navy"
+                                        className="mb-1.5 block text-sm font-semibold text-navy dark:text-[#f0f2f5]"
                                     >
                                         Email Address
                                     </label>
@@ -207,7 +207,7 @@ export default function ContactPage() {
                                         value={formState.email}
                                         onChange={handleChange}
                                         placeholder="your@email.com"
-                                        className={`h-12 w-full rounded-lg border bg-white px-4 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.email ? "border-error" : "border-gray-200"}`}
+                                        className={`h-12 w-full rounded-lg border bg-white dark:bg-[#1a243a] px-4 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.email ? "border-error" : "border-gray-200"}`}
                                     />
                                     {errors.email && (
                                         <p className="mt-1 text-xs text-error">{errors.email}</p>
@@ -218,7 +218,7 @@ export default function ContactPage() {
                                     <div>
                                         <label
                                             htmlFor="childName"
-                                            className="mb-1.5 block text-sm font-semibold text-navy"
+                                            className="mb-1.5 block text-sm font-semibold text-navy dark:text-[#f0f2f5]"
                                         >
                                             Child&#39;s Name
                                         </label>
@@ -230,7 +230,7 @@ export default function ContactPage() {
                                             value={formState.childName}
                                             onChange={handleChange}
                                             placeholder="Child's full name"
-                                            className={`h-12 w-full rounded-lg border bg-white px-4 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.childName ? "border-error" : "border-gray-200"}`}
+                                            className={`h-12 w-full rounded-lg border bg-white dark:bg-[#1a243a] px-4 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.childName ? "border-error" : "border-gray-200"}`}
                                         />
                                         {errors.childName && (
                                             <p className="mt-1 text-xs text-error">{errors.childName}</p>
@@ -239,7 +239,7 @@ export default function ContactPage() {
                                     <div>
                                         <label
                                             htmlFor="childAge"
-                                            className="mb-1.5 block text-sm font-semibold text-navy"
+                                            className="mb-1.5 block text-sm font-semibold text-navy dark:text-[#f0f2f5]"
                                         >
                                             Child&#39;s Age Group
                                         </label>
@@ -248,7 +248,7 @@ export default function ContactPage() {
                                             name="childAge"
                                             value={formState.childAge}
                                             onChange={handleChange}
-                                            className="h-12 w-full rounded-lg border border-gray-200 bg-white px-4 text-base text-charcoal focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200"
+                                            className="h-12 w-full rounded-lg border border-gray-200 bg-white dark:bg-[#1a243a] px-4 text-base text-charcoal focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200"
                                         >
                                             <option value="">Select age group</option>
                                             <option value="Daycare (6 months – 2 years)">Daycare (6 months – 2 years)</option>
@@ -263,7 +263,7 @@ export default function ContactPage() {
                                 <div>
                                     <label
                                         htmlFor="message"
-                                        className="mb-1.5 block text-sm font-semibold text-navy"
+                                        className="mb-1.5 block text-sm font-semibold text-navy dark:text-[#f0f2f5]"
                                     >
                                         Message
                                     </label>
@@ -275,7 +275,7 @@ export default function ContactPage() {
                                         value={formState.message}
                                         onChange={handleChange}
                                         placeholder="Tell us how we can help you..."
-                                        className={`w-full rounded-lg border bg-white px-4 py-3 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.message ? "border-error" : "border-gray-200"}`}
+                                        className={`w-full rounded-lg border bg-white dark:bg-[#1a243a] px-4 py-3 text-base text-charcoal placeholder:text-slate-text/50 focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all duration-200 ${errors.message ? "border-error" : "border-gray-200"}`}
                                     />
                                     {errors.message && (
                                         <p className="mt-1 text-xs text-error">{errors.message}</p>
@@ -290,7 +290,7 @@ export default function ContactPage() {
                                     <MessageCircle className="mr-2 h-4 w-4" />
                                     Send via WhatsApp
                                 </Button>
-                                <p className="text-xs text-slate-text/70">
+                                <p className="text-xs text-slate-text dark:text-[#8a9bbd]/70">
                                     This will open a WhatsApp conversation with your details pre-filled.
                                 </p>
                             </form>
@@ -301,17 +301,17 @@ export default function ContactPage() {
                             <AnimateOnScroll animation="fadeInRight" delay={100}>
                                 <Card className="border-none shadow-sm">
                                     <CardContent className="p-6">
-                                        <h3 className="mb-4 font-display text-lg font-semibold text-navy">
+                                        <h3 className="mb-4 font-display text-lg font-semibold text-navy dark:text-[#f0f2f5]">
                                             School Information
                                         </h3>
                                         <ul className="space-y-4">
                                             <li className="flex items-start gap-3">
                                                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
                                                 <div>
-                                                    <p className="text-sm font-semibold text-navy">
+                                                    <p className="text-sm font-semibold text-navy dark:text-[#f0f2f5]">
                                                         Address
                                                     </p>
-                                                    <p className="text-sm text-slate-text">
+                                                    <p className="text-sm text-slate-text dark:text-[#8a9bbd]">
                                                         #6 Robert Lane, Kossoh Town
                                                         <br />
                                                         Western Rural Area
@@ -321,7 +321,7 @@ export default function ContactPage() {
                                             <li className="flex items-start gap-3">
                                                 <Phone className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
                                                 <div>
-                                                    <p className="text-sm font-semibold text-navy">Phone</p>
+                                                    <p className="text-sm font-semibold text-navy dark:text-[#f0f2f5]">Phone</p>
                                                     <a
                                                         href="tel:+23231180012"
                                                         className="text-sm text-brand-blue hover:underline"
@@ -333,7 +333,7 @@ export default function ContactPage() {
                                             <li className="flex items-start gap-3">
                                                 <Mail className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
                                                 <div>
-                                                    <p className="text-sm font-semibold text-navy">Email</p>
+                                                    <p className="text-sm font-semibold text-navy dark:text-[#f0f2f5]">Email</p>
                                                     <a
                                                         href="mailto:ednishadaycare@gmail.com"
                                                         className="text-sm text-brand-blue hover:underline"
@@ -345,11 +345,11 @@ export default function ContactPage() {
                                             <li className="flex items-start gap-3">
                                                 <Clock className="mt-0.5 h-5 w-5 shrink-0 text-gold" />
                                                 <div>
-                                                    <p className="text-sm font-semibold text-navy">Hours</p>
-                                                    <p className="text-sm text-slate-text">
+                                                    <p className="text-sm font-semibold text-navy dark:text-[#f0f2f5]">Hours</p>
+                                                    <p className="text-sm text-slate-text dark:text-[#8a9bbd]">
                                                         Monday – Friday: 7:00 AM – 5:00 PM
                                                     </p>
-                                                    <p className="text-xs text-slate-text/70">
+                                                    <p className="text-xs text-slate-text dark:text-[#8a9bbd]/70">
                                                         Closed on Weekends &amp; Public Holidays
                                                     </p>
                                                     <p className="mt-1 text-xs text-gold">
@@ -367,10 +367,10 @@ export default function ContactPage() {
                                 <Card className="border-none bg-[#25D366]/10 shadow-sm transition-all duration-300 hover:shadow-md">
                                     <CardContent className="p-6 text-center">
                                         <MessageCircle className="mx-auto mb-3 h-10 w-10 text-[#25D366]" />
-                                        <h3 className="font-display text-lg font-semibold text-navy">
+                                        <h3 className="font-display text-lg font-semibold text-navy dark:text-[#f0f2f5]">
                                             Chat on WhatsApp
                                         </h3>
-                                        <p className="mt-1 text-sm text-slate-text">
+                                        <p className="mt-1 text-sm text-slate-text dark:text-[#8a9bbd]">
                                             Quick response guaranteed!
                                         </p>
                                         <a
@@ -392,11 +392,11 @@ export default function ContactPage() {
                                 <Card className="overflow-hidden border-none shadow-sm">
                                     <div className="relative h-48 bg-sky/30">
                                         <div className="flex h-full flex-col items-center justify-center text-center">
-                                            <MapPin className="mb-2 h-8 w-8 text-navy animate-gentleBounce" />
-                                            <p className="font-display text-sm font-semibold text-navy">
+                                            <MapPin className="mb-2 h-8 w-8 text-navy dark:text-[#f0f2f5] animate-gentleBounce" />
+                                            <p className="font-display text-sm font-semibold text-navy dark:text-[#f0f2f5]">
                                                 #6 Robert Lane
                                             </p>
-                                            <p className="text-xs text-slate-text">
+                                            <p className="text-xs text-slate-text dark:text-[#8a9bbd]">
                                                 Kossoh Town, Western Rural Area
                                             </p>
                                             <a
@@ -417,7 +417,7 @@ export default function ContactPage() {
             </section>
 
             {/* Enrollment Process */}
-            <section className="bg-warm-gray py-16 sm:py-20">
+            <section className="bg-warm-gray dark:bg-[#151d32] py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <AnimateOnScroll animation="fadeInUp">
                         <SectionHeading
@@ -451,13 +451,13 @@ export default function ContactPage() {
                             <AnimateOnScroll key={item.step} animation="fadeInUp" delay={i * 120}>
                                 <Card className="border-none shadow-sm text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
                                     <CardContent className="p-6">
-                                        <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-gold text-navy font-display text-xl font-bold">
+                                        <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-gold text-navy dark:text-[#f0f2f5] font-display text-xl font-bold">
                                             {item.step}
                                         </div>
-                                        <h3 className="font-display text-lg font-semibold text-navy">
+                                        <h3 className="font-display text-lg font-semibold text-navy dark:text-[#f0f2f5]">
                                             {item.title}
                                         </h3>
-                                        <p className="mt-2 text-sm text-slate-text">
+                                        <p className="mt-2 text-sm text-slate-text dark:text-[#8a9bbd]">
                                             {item.desc}
                                         </p>
                                     </CardContent>

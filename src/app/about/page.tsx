@@ -49,7 +49,7 @@ export default function AboutPage() {
     return (
         <>
             {/* Hero */}
-            <section className="relative flex min-h-[350px] items-center overflow-hidden bg-navy">
+            <section className="relative flex min-h-[350px] items-center overflow-hidden bg-navy dark:bg-[#0a0f1a]">
                 <Image
                     src="/images/classroom-group-2.jpeg"
                     alt="Ednisha Day Care community"
@@ -81,7 +81,7 @@ export default function AboutPage() {
             </section>
 
             {/* Our Story */}
-            <section className="bg-cloud py-16 sm:py-20">
+            <section className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid items-center gap-12 lg:grid-cols-2">
                         <AnimateOnScroll animation="fadeInLeft" duration={700}>
@@ -90,10 +90,10 @@ export default function AboutPage() {
                                 subtitle="How a passion for children became Ednisha Day Care."
                                 centered={false}
                             />
-                            <div className="space-y-4 text-base leading-relaxed text-slate-text">
+                            <div className="space-y-4 text-base leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                                 <p>
                                     Ednisha Day Care &amp; Preparatory School was founded on
-                                    <strong className="text-navy"> January 6, 2025</strong>, born
+                                    <strong className="text-navy dark:text-[#f0f2f5]"> January 6, 2025</strong>, born
                                     from a simple yet powerful passion — a genuine love for children
                                     and a desire to create a safe, nurturing space where they can
                                     learn, grow, and thrive.
@@ -105,7 +105,7 @@ export default function AboutPage() {
                                     more than 20 children with 2 dedicated staff members.
                                 </p>
                                 <p>
-                                    Our motto, <strong className="text-navy">&quot;Learn, Lead &amp; Succeed&quot;</strong>,
+                                    Our motto, <strong className="text-navy dark:text-[#f0f2f5]">&quot;Learn, Lead &amp; Succeed&quot;</strong>,
                                     reflects our belief that every child has the potential to grow
                                     into a confident leader. From sensory play for infants to school
                                     readiness for preparatory-aged children, we craft experiences
@@ -140,7 +140,7 @@ export default function AboutPage() {
             </section>
 
             {/* Proprietor Spotlight */}
-            <section className="bg-warm-gray py-16 sm:py-20">
+            <section className="bg-warm-gray dark:bg-[#151d32] py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid items-center gap-12 lg:grid-cols-2">
                         <AnimateOnScroll animation="fadeInLeft" duration={700} className="order-2 lg:order-1 flex justify-center">
@@ -160,10 +160,10 @@ export default function AboutPage() {
                                 subtitle="The heart behind Ednisha Day Care."
                                 centered={false}
                             />
-                            <h3 className="mb-3 font-display text-xl font-semibold text-navy">
+                            <h3 className="mb-3 font-display text-xl font-semibold text-navy dark:text-[#f0f2f5]">
                                 Mrs. Eunice Sharka <span className="text-sm font-normal text-gold">— HTC</span>
                             </h3>
-                            <div className="space-y-4 text-base leading-relaxed text-slate-text">
+                            <div className="space-y-4 text-base leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                                 <p>
                                     Mrs. Eunice Sharka is a passionate educator whose deep love for
                                     children drove her to turn her dream into reality. With an HTC
@@ -185,7 +185,7 @@ export default function AboutPage() {
                                     of nurturing young minds and bodies.
                                 </p>
                             </div>
-                            <blockquote className="mt-6 border-l-4 border-gold pl-4 italic text-navy">
+                            <blockquote className="mt-6 border-l-4 border-gold pl-4 italic text-navy dark:text-[#f0f2f5]">
                                 &quot;With passion, faith, and genuine love for children coming
                                 together, anything is possible.&quot;
                             </blockquote>
@@ -195,7 +195,7 @@ export default function AboutPage() {
             </section>
 
             {/* Core Values */}
-            <section className="bg-cloud py-16 sm:py-20">
+            <section className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <AnimateOnScroll animation="fadeInUp">
                         <SectionHeading
@@ -211,15 +211,15 @@ export default function AboutPage() {
                         {values.map((value) => (
                             <div
                                 key={value.title}
-                                className="rounded-xl bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+                                className="rounded-xl bg-white dark:bg-[#1a243a] p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
                             >
-                                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-navy/5 transition-transform duration-300 hover:scale-110">
-                                    <value.icon className="h-6 w-6 text-navy" />
+                                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-navy dark:bg-[#0a0f1a]/5 transition-transform duration-300 hover:scale-110">
+                                    <value.icon className="h-6 w-6 text-navy dark:text-[#f0f2f5]" />
                                 </div>
-                                <h3 className="font-display text-lg font-semibold text-navy">
+                                <h3 className="font-display text-lg font-semibold text-navy dark:text-[#f0f2f5]">
                                     {value.title}
                                 </h3>
-                                <p className="mt-2 text-sm leading-relaxed text-slate-text">
+                                <p className="mt-2 text-sm leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                                     {value.desc}
                                 </p>
                             </div>

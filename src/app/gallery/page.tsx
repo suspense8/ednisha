@@ -144,7 +144,7 @@ export default function GalleryPage() {
     return (
         <>
             {/* Hero */}
-            <section className="relative flex min-h-[300px] items-center overflow-hidden bg-navy">
+            <section className="relative flex min-h-[300px] items-center overflow-hidden bg-navy dark:bg-[#0a0f1a]">
                 <Image
                     src="/images/classroom-group-1.jpeg"
                     alt="Children at Ednisha"
@@ -175,7 +175,7 @@ export default function GalleryPage() {
             </section>
 
             {/* Gallery */}
-            <section className="bg-cloud py-16 sm:py-20">
+            <section className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <AnimateOnScroll animation="fadeInUp">
                         <SectionHeading
@@ -193,8 +193,8 @@ export default function GalleryPage() {
                                     variant={filter === cat ? "default" : "outline"}
                                     onClick={() => setFilter(cat)}
                                     className={`rounded-full px-5 text-sm transition-all duration-200 ${filter === cat
-                                        ? "bg-navy text-white hover:bg-navy/90 scale-105"
-                                        : "border-navy/20 text-navy hover:bg-navy/5 hover:scale-105"
+                                        ? "bg-navy dark:bg-[#0a0f1a] text-white hover:bg-navy/90 scale-105"
+                                        : "border-navy dark:border-[#f0f2f5]/20 text-navy dark:text-[#f0f2f5] hover:bg-navy/5 hover:scale-105"
                                         }`}
                                 >
                                     {cat}
@@ -226,7 +226,7 @@ export default function GalleryPage() {
                                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-navy/0 transition-colors duration-300 group-hover:bg-navy/20" />
+                                <div className="absolute inset-0 bg-navy dark:bg-[#0a0f1a]/0 transition-colors duration-300 group-hover:bg-navy/20" />
                                 <div className="absolute bottom-0 left-0 right-0 translate-y-full transition-transform duration-300 group-hover:translate-y-0 bg-gradient-to-t from-navy/70 to-transparent p-3">
                                     <p className="text-xs text-white/90 line-clamp-2">{img.alt}</p>
                                 </div>
@@ -244,7 +244,7 @@ export default function GalleryPage() {
                 >
                     <button
                         onClick={() => setLightbox(null)}
-                        className="absolute right-4 top-4 rounded-full bg-white/10 p-2 text-white hover:bg-white/20 transition-colors duration-200"
+                        className="absolute right-4 top-4 rounded-full bg-white dark:bg-[#1a243a]/10 p-2 text-white hover:bg-white/20 transition-colors duration-200"
                         aria-label="Close"
                     >
                         <X className="h-6 w-6" />

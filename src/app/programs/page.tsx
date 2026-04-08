@@ -82,7 +82,7 @@ export default function ProgramsPage() {
     return (
         <>
             {/* Hero */}
-            <section className="relative flex min-h-[350px] items-center overflow-hidden bg-navy">
+            <section className="relative flex min-h-[350px] items-center overflow-hidden bg-navy dark:bg-[#0a0f1a]">
                 <Image
                     src="/images/classroom-learning-1.jpeg"
                     alt="Children learning at Ednisha"
@@ -113,7 +113,7 @@ export default function ProgramsPage() {
             </section>
 
             {/* Programs */}
-            <section className="bg-cloud py-16 sm:py-20">
+            <section className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl space-y-20 px-4 sm:px-6 lg:px-8">
                     {programs.map((program, i) => (
                         <div
@@ -135,7 +135,7 @@ export default function ProgramsPage() {
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
                                     <div
-                                        className={`absolute left-4 top-4 rounded-full ${program.color} px-4 py-1.5 text-sm font-bold text-navy`}
+                                        className={`absolute left-4 top-4 rounded-full ${program.color} px-4 py-1.5 text-sm font-bold text-navy dark:text-[#f0f2f5]`}
                                     >
                                         {program.age}
                                     </div>
@@ -148,21 +148,21 @@ export default function ProgramsPage() {
                                 className={i % 2 === 1 ? "lg:order-1" : ""}
                             >
                                 <div className="mb-3 flex items-center gap-3">
-                                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy/10">
-                                        <program.icon className="h-6 w-6 text-navy" />
+                                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy dark:bg-[#0a0f1a]/10">
+                                        <program.icon className="h-6 w-6 text-navy dark:text-[#f0f2f5]" />
                                     </div>
-                                    <h2 className="font-display text-2xl font-bold text-navy sm:text-3xl">
+                                    <h2 className="font-display text-2xl font-bold text-navy dark:text-[#f0f2f5] sm:text-3xl">
                                         {program.title}
                                     </h2>
                                 </div>
-                                <p className="text-base leading-relaxed text-slate-text">
+                                <p className="text-base leading-relaxed text-slate-text dark:text-[#8a9bbd]">
                                     {program.desc}
                                 </p>
                                 <div className="mt-6 grid grid-cols-2 gap-3">
                                     {program.skills.map((skill, si) => (
                                         <div
                                             key={skill.label}
-                                            className="flex items-center gap-2 rounded-lg bg-white p-3 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md animate-fadeInUp"
+                                            className="flex items-center gap-2 rounded-lg bg-white dark:bg-[#1a243a] p-3 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md animate-fadeInUp"
                                             style={{
                                                 animationDelay: `${400 + si * 100}ms`,
                                                 opacity: 0,
@@ -170,7 +170,7 @@ export default function ProgramsPage() {
                                             }}
                                         >
                                             <skill.icon className="h-5 w-5 text-gold" />
-                                            <span className="text-sm font-medium text-navy">
+                                            <span className="text-sm font-medium text-navy dark:text-[#f0f2f5]">
                                                 {skill.label}
                                             </span>
                                         </div>
@@ -183,7 +183,7 @@ export default function ProgramsPage() {
             </section>
 
             {/* Daily Schedule */}
-            <section className="bg-warm-gray py-16 sm:py-20">
+            <section className="bg-warm-gray dark:bg-[#151d32] py-16 sm:py-20">
                 <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
                     <AnimateOnScroll animation="fadeInUp">
                         <SectionHeading
@@ -205,10 +205,10 @@ export default function ProgramsPage() {
                                             }}
                                         >
                                             <item.icon className="h-5 w-5 shrink-0 text-gold" />
-                                            <span className="w-32 shrink-0 text-sm font-semibold text-navy sm:w-40">
+                                            <span className="w-32 shrink-0 text-sm font-semibold text-navy dark:text-[#f0f2f5] sm:w-40">
                                                 {item.time}
                                             </span>
-                                            <span className="text-sm text-slate-text">
+                                            <span className="text-sm text-slate-text dark:text-[#8a9bbd]">
                                                 {item.activity}
                                             </span>
                                         </div>

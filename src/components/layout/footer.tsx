@@ -31,7 +31,7 @@ function FacebookIcon({ className }: { className?: string }) {
 
 export function Footer() {
     return (
-        <footer className="bg-navy text-white">
+        <footer className="bg-navy dark:bg-[#0a0f1a] text-white">
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
                     {/* Brand */}
@@ -67,7 +67,7 @@ export function Footer() {
                                     href="https://www.facebook.com/share/g/1JAqshaDrq/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-200 hover:bg-[#1877F2] hover:scale-110"
+                                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white dark:bg-[#1a243a]/10 text-white transition-all duration-200 hover:bg-[#1877F2] hover:scale-110"
                                     aria-label="Facebook"
                                 >
                                     <FacebookIcon className="h-4 w-4" />
@@ -76,14 +76,14 @@ export function Footer() {
                                     href="https://www.tiktok.com/@ednishadaycare"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-200 hover:bg-black hover:scale-110"
+                                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white dark:bg-[#1a243a]/10 text-white transition-all duration-200 hover:bg-black hover:scale-110"
                                     aria-label="TikTok"
                                 >
                                     <TikTokIcon className="h-4 w-4" />
                                 </a>
                                 <a
                                     href="mailto:ednishadaycare@gmail.com"
-                                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-200 hover:bg-red-600 hover:scale-110"
+                                    className="flex h-9 w-9 items-center justify-center rounded-full bg-white dark:bg-[#1a243a]/10 text-white transition-all duration-200 hover:bg-red-600 hover:scale-110"
                                     aria-label="Email"
                                 >
                                     <Mail className="h-4 w-4" />
