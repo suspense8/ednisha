@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { RecruitmentBanner } from "@/components/ui/recruitment-banner";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const fredoka = Fredoka({
@@ -61,6 +62,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col transition-colors duration-300">
         <ThemeProvider>
+          <RecruitmentBanner />
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />

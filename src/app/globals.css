@@ -403,6 +403,20 @@
   animation: gentleBounce 2s ease-in-out infinite;
 }
 
+/* Recruitment banner shimmer */
+@keyframes bannerShimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-bannerShimmer {
+  animation: bannerShimmer 3s ease-in-out infinite;
+}
+
 /* Navbar scroll transition */
 .navbar-scrolled {
   background-color: rgba(27, 42, 74, 0.98);

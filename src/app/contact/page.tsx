@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
-import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle, Briefcase, Sparkles, Users } from "lucide-react";
 import { useState } from "react";
 
 const WHATSAPP_NUMBER = "23231180012";
@@ -465,6 +465,137 @@ export default function ContactPage() {
                             </AnimateOnScroll>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* ===== CAREER OPPORTUNITIES ===== */}
+            <section id="careers" className="bg-cloud dark:bg-[#0f1422] py-16 sm:py-20">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <AnimateOnScroll animation="fadeInUp">
+                        <SectionHeading
+                            title="Career Opportunities"
+                            subtitle="Join our growing team — we're hiring passionate educators!"
+                        />
+                    </AnimateOnScroll>
+
+                    <AnimateOnScroll animation="fadeInUp" delay={150}>
+                        <Card className="overflow-hidden border-none shadow-md">
+                            {/* Green header strip */}
+                            <div className="relative overflow-hidden bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 dark:from-emerald-800 dark:via-teal-800 dark:to-emerald-900 px-6 py-4 sm:px-8">
+                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-bannerShimmer" />
+                                <div className="relative flex items-center gap-3">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
+                                        <Sparkles className="h-5 w-5 text-yellow-300" />
+                                    </div>
+                                    <div>
+                                        <div className="flex items-center gap-2">
+                                            <h3 className="font-display text-lg font-bold text-white sm:text-xl">
+                                                Daycare Teachers Wanted
+                                            </h3>
+                                            <span className="relative flex h-6 items-center gap-1.5 rounded-full bg-white/20 px-2.5 text-[10px] font-bold uppercase tracking-wider text-white">
+                                                <span className="relative flex h-2 w-2">
+                                                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-yellow-300 opacity-75" />
+                                                    <span className="relative inline-flex h-2 w-2 rounded-full bg-yellow-400" />
+                                                </span>
+                                                Now Hiring
+                                            </span>
+                                        </div>
+                                        <p className="text-sm text-white/80">
+                                            Ednisha Day Care &amp; Preparatory School
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <CardContent className="p-6 sm:p-8">
+                                <div className="grid gap-6 sm:gap-8 lg:grid-cols-3">
+                                    {/* Position Details */}
+                                    <div>
+                                        <div className="mb-3 flex items-center gap-2">
+                                            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-100 dark:bg-emerald-900/40">
+                                                <Briefcase className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                                            </div>
+                                            <h4 className="font-display text-base font-semibold text-navy dark:text-[#f0f2f5]">
+                                                Position Details
+                                            </h4>
+                                        </div>
+                                        <ul className="space-y-2.5 text-sm text-slate-text dark:text-[#8a9bbd]">
+                                            <li className="flex items-start gap-2">
+                                                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
+                                                <span><strong className="text-navy dark:text-[#f0f2f5]">2 Female Daycare Teachers</strong></span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
+                                                <span>Patient, enthusiastic &amp; passionate about childcare</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
+                                                <span>Ability to create engaging activities for children</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    {/* Where & When */}
+                                    <div>
+                                        <div className="mb-3 flex items-center gap-2">
+                                            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/40">
+                                                <MapPin className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                                            </div>
+                                            <h4 className="font-display text-base font-semibold text-navy dark:text-[#f0f2f5]">
+                                                Where &amp; When to Apply
+                                            </h4>
+                                        </div>
+                                        <ul className="space-y-2.5 text-sm text-slate-text dark:text-[#8a9bbd]">
+                                            <li className="flex items-start gap-2">
+                                                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
+                                                <span><strong className="text-navy dark:text-[#f0f2f5]">#6 Robert Lane, Kossoh Town</strong></span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
+                                                <span>Monday – Friday, <strong className="text-navy dark:text-[#f0f2f5]">10:00 AM – 3:00 PM</strong></span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <Users className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
+                                                <span>Walk in during the hours above to apply in person</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    {/* Contact Numbers */}
+                                    <div>
+                                        <div className="mb-3 flex items-center gap-2">
+                                            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gold/20">
+                                                <Phone className="h-5 w-5 text-gold" />
+                                            </div>
+                                            <h4 className="font-display text-base font-semibold text-navy dark:text-[#f0f2f5]">
+                                                Call to Inquire
+                                            </h4>
+                                        </div>
+                                        <div className="grid grid-cols-2 gap-2">
+                                            {[
+                                                { display: "031-18-0012", href: "tel:+23231180012" },
+                                                { display: "031-47-5480", href: "tel:+23231475480" },
+                                                { display: "080-16-1829", href: "tel:+23280161829" },
+                                                { display: "088-41-3383", href: "tel:+23288413383" },
+                                            ].map((num) => (
+                                                <a
+                                                    key={num.display}
+                                                    href={num.href}
+                                                    className="group flex items-center gap-2 rounded-lg bg-cloud dark:bg-[#151d32] px-3 py-2.5 text-sm font-semibold text-emerald-700 dark:text-emerald-400 transition-all duration-200 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 hover:scale-[1.02]"
+                                                >
+                                                    <Phone className="h-3.5 w-3.5 shrink-0 transition-transform duration-200 group-hover:rotate-12" />
+                                                    {num.display}
+                                                </a>
+                                            ))}
+                                        </div>
+                                        <p className="mt-3 text-xs text-slate-text/70 dark:text-[#8a9bbd]/50">
+                                            Call any number above to express your interest
+                                        </p>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </AnimateOnScroll>
                 </div>
             </section>
         </>

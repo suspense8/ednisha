@@ -137,7 +137,7 @@ export default function Home() {
               <div className="relative flex justify-center">
                 <div className="relative h-80 w-80 overflow-hidden rounded-3xl border-4 border-gold/30 shadow-xl sm:h-96 sm:w-96">
                   <Image
-                    src="/images/proprietor-portrait.jpeg"
+                    src="/images/proprietor-portrait.png"
                     alt="Mrs. Eunice Sharka — Proprietor of Ednisha Day Care"
                     fill
                     sizes="(max-width: 640px) 320px, 384px"
